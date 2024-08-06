@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="BoxMaster">
+        <!-- Informacion personal a-->
+        <aside class="box1">
+            <div class="box-info-more">
+                <button class="btn-info_more" data-btninfo>
+                    <span class="more-info">Mas Informacion</span>
+                </button>
+            </div>
+            <div class="section-info">
+                <figure class="image-box">
+                    <img class="img1" src="img/avatar-1.png" alt="Imagen de prueba" >
+                    <!-- <img class="img2" src="img/bob.jpg" alt="Segunda Imagen de prueba"> -->
+                </figure>
+                <div class="section-info-name">
+                    <h1 class="name">Carlos Benitez</h1>
+                    <a class="title">Ing. en Software</a>
+                </div>
+            </div>
+            
+            <div class="section-info_contact inactive" data-boxinfo>
+                <a class="sep"></a>
+                <ul class="contact-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-envelope fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="" class="contact-link">ccarlos5412014@outlook.com</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="icon fa-solid fa-mobile-screen-button fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Telefono</p>
+                            <a href="" class="contact-link">(+52) 55 2521-1102</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-calendar-days fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Fecha de nacimiento</p>
+                            <time datetime="1999-11-25">25 Noviembre 1999</time>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-location-dot fa-xl"></i>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Direccion</p>
+                            <address>Ecatepec, <br> Estado de Mexico, Mexico</address>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <i class="fa-brands fa-facebook fa-sm"></i>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="" class="social-link">
+                            <i class="fa-brands fa-instagram fa-sm"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- informacion sobre mi trabajo -->
+        <section class="box2">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>Acerca de mi</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resumen</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portafolio</button>
+                    </li>
+                </ul>
+            </nav>
+            <article class="acerca-de active" data-page="acerca de mi">
+                <header class="header">
+                    <h2 class="h2 article-title">
+                        Acerca de Mi
+                    </h2>
+                    <span class="barra"></span>
+                </header>
+
+                <section class="about-text">
+                    <p>Soy <strong>Ingeniero en Software</strong> con 2 años de experiencia en <strong>Desarrollo Web</strong>, siempre enfocado en aprender y aplicar nuevos conocimientos 
+                        para optimizar mi trabajo y enfrentar nuevos desafíos.</p>
+                </section> 
+
+                <section class="service">
+                    <h3>Que es lo que hago</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+
+                                <img src="img/icon/desarrollo.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Desarrollo Web</h4>
+                                <p class="service-item-text">
+                                    Construcción de sitios y aplicaciones que se ejecutan en navegadores web. Esto incluye 
+                                    la creación de páginas estáticas hasta aplicaciones web interactivas.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/icon/responsivo.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Diseño Responsivo</h4>
+                                <p class="service-item-text">
+                                    enfoque en el diseño web que tiene como objetivo crear sitios que se adapten de manera 
+                                    fluida y automática a diferentes tamaños de pantalla y dispositivos.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/icon/base.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Base de Datos</h4>
+                                <p class="service-item-text">
+                                    utilizar sistemas y herramientas para almacenar, organizar, manipular y recuperar datos de manera eficiente y segura.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img src="img/icon/cms.png" alt="">
+                            </div>
+                            <div class="service-content-box">
+                                <h4 class="service-item-title">Sistemas de Gestión de Contenidos</h4>
+                                <p class="service-item-text">
+                                    plataforma de software que permite a los usuarios crear, gestionar, y modificar el contenido de un sitio web 
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>  
+                
+                <section class="clients">
+                    <h3 class="clients-title">Trabaje Para</h3>
+                    <div class="div-list">
+                        <ul class="clients-list has-scrollbar">
+                            <li class="clients-item">
+                                <a href="https://iloliving.com/">
+                                    <img class="logo-carousel" src="img/logo-ilo.jpg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
+
+            <article class="resumen" data-page="resumen">
+                <header class="header">
+                    <h2 class="h2 article-title">
+                        Resumen
+                    </h2>
+                    <span class="barra"></span>
+                </header>
+                
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-book fa-xl"></i>
+                        </div>
+                        <h3>Educacion</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Udemy</h4>
+                            <span>2024</span>
+                            <p class="timeline-text">Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL</p>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Aprende.org</h4>
+                            <span>2019</span>
+                            <ul>
+                                <li class="text-decoration2">
+                                    <p>Desarrollo Front-End</p>
+                                </li>
+                                <li class="text-decoration2">
+                                    <p>Desarrollo Back-end</p>
+                                </li>
+                                <li class="text-decoration2">
+                                    <p>Desarrollo de Tecnico en redes de datos</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Universidad Politecnica de Tecámac</h4>
+                            <span>2018 - 2021</span>
+                            <p class="timeline-text">Ingenieria en Software - Título</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <i class="fa-solid fa-book fa-xl"></i>
+                        </div>
+                        <h3>Experiencia</h3>
+                    </div>
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">LE CHIEN SPORTIF - FreeLancer.</h4>
+                            <span>Enero de 2021- mayo de 2021</span>
+                            <p class="timeline-text">
+                                Desarrollo de una página web para un concepto de formación y cuidado integral para tu mejor amig@. 
+                                Está dirigido a los amantes de los perros en un ambiente exclusivo, profesional, amoroso, serio y responsable.
+                            </p> 
+                            <div class="experiencia-box">
+                                <ul>
+                                    <li class="text-decoration2">
+                                        <p>Realización de formularios para registrar a las mascotas, los usuarios y para registrar si las mascotas están vacunadas</p>
+                                    </li>
+                                    <li class="text-decoration2">
+                                        <p>Realización de diseño de interfaces</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="timeline-item">
+                            <h4 class="timeline-item-title">Ilò living - Webmaster</h4>
+                            <span>Agosto 2022 - Actualidad</span>
+                            <p class="timeline-text">
+                                Trabajé como Webmaster en la tienda iló living, especializada en artículos para el hogar, como línea blanca y muebles para la recámara. Mis responsabilidades incluían:
+                                <ul>
+                                    <li class="text-decoration2">
+                                        <p>Dar de alta nuevos artículos.</p>
+                                    </li>
+                                    <li class="text-decoration2">
+                                        <p>Manejar precios y promociones.</p>
+                                    </li>
+                                    <li class="text-decoration2">
+                                        <p>Colaborar con diseñadores para crear imágenes y fotografías promocionales.</p>
+                                    </li>
+                                </ul>
+                                <p>Para la gestión y desarrollo de la página web, utilicé tecnologías como JavaScript, PHP, CSS y WordPress.</p>    
+                            </p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3>Habilidades Tecnicas</h3>
+                    <ul class="skills-list content-card">
+                        <li class="skills-item text-decoration2">
+                            <h5 class="skill-name">Lenguajes de Marcado y Estilos:</h5>
+                            <div class="title-wrapper">
+                                <ul>
+                                    <li class="text-decoration">
+                                        <p><strong>HTML</strong>: Creación y estructuración de contenido web, optimización para SEO y accesibilidad.</p>
+                                    </li>
+                                    <li class="text-decoration">
+                                        <p><strong>CSS</strong>: Diseño y maquetación de páginas web, implementación de responsive design, y manejo avanzado de layouts con grid y flexbox.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="skills-item text-decoration2">
+                            <h5 class="skill-name">Lenguajes de Programacion:</h5>
+                            <div class="title-wrapper">
+                                <ul>
+                                    <li class="text-decoration">
+                                        <p><strong>JavaScript</strong>: Desarrollo de funcionalidades dinámicas en la web, manipulación del DOM, manejo de eventos</p>
+                                    </li>
+                                    <li class="text-decoration">
+                                        <p><strong>PHP</strong>: Desarrollo de aplicaciones web del lado del servidor, integración con bases de datos (MySQL),</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="skills-item text-decoration2">
+                            <h5 class="skill-name">Base de Datos:</h5>
+                            <div class="title-wrapper">
+                                <ul>
+                                    <li class="text-decoration">
+                                        <p><strong>MySQL</strong>: Diseño y gestión de bases de datos, consultas SQL, y optimización de rendimiento para aplicaciones web.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="skills-item text-decoration2">
+                            <h5 class="skill-name">Sistemas de Gestión de Contenidos (CMS):</h5>
+                            <div class="title-wrapper">
+                                <ul>
+                                    <li class="text-decoration">
+                                        <p><strong>WordPress</strong>: Personalización y desarrollo de temas y plugins, gestión de contenido, y optimización del rendimiento.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portafolio" data-page="portafolio">
+                <header class="header">
+                    <h2 class="h2 article-title">Portafolio</h2>
+                    <span class="barra"></span>
+                </header>
+                <section class="projects">
+                    <!-- <ul class="filter-list">
+                        <li class="filter-item">
+                            <button class="active" data-filter-btn>All</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Casa Vargas</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>HOW2</button>
+                        </li>
+                        <li class="filter-item">
+                            <button data-filter-btn>Practimart </button>
+                        </li>
+                    </ul> -->
+
+                    <!-- <div class="filter-select-box">
+
+                        <button class="filter-select" data-select>
+            
+                          <div class="select-value" data-select-value>Selecciona la categoria</div>
+            
+                          <div class="select-icon">
+                            <ion-icon name="chevron-down"></ion-icon>
+                          </div>
+            
+                        </button>
+            
+                        <ul class="select-list">
+            
+                          <li class="select-item">
+                            <button data-select-item>All</button>
+                          </li>
+            
+                          <li class="select-item">
+                            <button data-select-item>Casa Vargas</button>
+                          </li>
+            
+                          <li class="select-item">
+                            <button data-select-item>HOW2</button>
+                          </li>
+            
+                          <li class="select-item">
+                            <button data-select-item>Practimart</button>
+                          </li>
+            
+                        </ul>
+            
+                    </div> 
+                    <ul class="project-list galeria-imagenes"></ul> -->
+                    <ul class="project-list">
+                        <li class="project-item active">
+                            <a class="project-box" href="https://carlosivan165.github.io/BlogDeCafe.io/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                    </div>
+                                    <img loading="lazy" class="img-thumb" src="img/projecto-curso/cafe.png" alt="imagen galeria">
+                                </figure>
+                                <h3 class="project-title">Blog De Cafe</h3>
+                                <h5>Proyecto de Curso de Udemy</h5>
+                            </a>
+                        </li>
+                        <li class="project-item active">
+                            <a class="project-box" href="https://carlosivan165.github.io/FrontEndStore.io/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                    </div>
+                                    <img loading="lazy" class="img-thumb" src="img/projecto-curso/store.png" alt="imagen galeria">
+                                </figure>
+                                <h3 class="project-title">FrontEndStore</h3>
+                                <h5>Proyecto de Curso de Udemy</h5>
+                            </a>
+                        </li>
+                        <li class="project-item active">
+                            <a class="project-box" href="https://carlosivan165.github.io/FestivalDeMusica/">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                    </div>
+                                    <img loading="lazy" class="img-thumb" src="img/projecto-curso/festival.png" alt="imagen galeria">
+                                </figure>
+                                <h3 class="project-title">Rock & EDM Festival</h3>
+                                <h5>Proyecto de Curso de Udemy</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </article>
+            
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
