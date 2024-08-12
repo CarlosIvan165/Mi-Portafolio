@@ -8,7 +8,7 @@ function iniciarApp(){
     crearGaleria('practimart', 8, );
     crearGaleria('how2', 9, 'Director de arte Jr');
     crearGaleria('casa vargas', 10, 'Lider de diseño e imagen');
-    agregarEventosDeFiltro();
+    /* agregarEventosDeFiltro(); */
 }
 
 //Funcion para active
@@ -42,11 +42,11 @@ function crearGaleria(categoria, cantidad, puesto) {
             mostrarImagen(categoria, i);
         };
 
-        galeria.appendChild(imagen);
+        /* galeria.appendChild(imagen); */
     }
 
     // Redefinir filterItems después de crear las imágenes
-    agregarEventosDeFiltro();
+    /* agregarEventosDeFiltro(); */
 }
 
 function mostrarImagen(categoria, id) {
@@ -85,7 +85,7 @@ function mostrarImagen(categoria, id) {
     body.classList.add('fijar-body');
 }
 
-function agregarEventosDeFiltro() {
+/* function agregarEventosDeFiltro() {
     const select = document.querySelector("[data-select]");
     const selectItems = document.querySelectorAll("[data-select-item]");
     const selectValue = document.querySelector("[data-select-value]");
@@ -132,7 +132,7 @@ function agregarEventosDeFiltro() {
         lastClickedBtn = this;
       });
     }
-}
+} */
 
 const BoxInfo = document.querySelector("[data-boxinfo]");
 const BtnInfoMore = document.querySelector("[data-btninfo]");
@@ -159,4 +159,22 @@ for (let i = 0; i < navigationLinks.length; i++) {
             }
         }
     });
+}
+
+const form = document.querySelector("[data-form]");
+const formInputs = document.querySelectorAll("[data-form-input]");
+const formBtn = document.querySelector("[data-form-btn]");
+
+// add event to all form input field
+for (let i = 0; i < formInputs.length; i++) {
+  formInputs[i].addEventListener("input", function () {
+
+    // check form validation
+    if (form.checkValidity()) {
+      formBtn.removeAttribute("disabled");
+    } else {
+      formBtn.setAttribute("disabled", "");
+    }
+
+  });
 }
