@@ -795,6 +795,18 @@ input, textarea{
         transition: var(--transition-1);
     }
 
+    .img-thumb{
+        width: 150;
+        height: 300;
+    }
+
+    .img-thumb:hover, .logo-carousel:hover{
+        filter: opacity(30%);
+        transition: filter 0.5s;
+        width: 150;
+        height: 300;
+    }
+
 /* Tablet */
 @media (max-width: 1250px){
     .BoxMaster{
@@ -915,12 +927,13 @@ input, textarea{
     }
 
     .box1 .btn-info_more:hover{
-        background: var(--bg-gradient-blue-2);
+        background: var(--color-fav);
     }
 
     .box1 .btn-info_more:hover::before,.btn-info_more:focus::before{
-        background: var(--bg-gradient-blue-2);
+        background: var(--color-fav);
     }
+    
 }   
 
 
@@ -981,6 +994,14 @@ input, textarea{
     }
 
     .img-thumb{
+        filter: grayscale(100%);
+        transition: filter 1s;
+        width: 150;
+        height: 300;
+    }
+
+    .img-thumb:hover{
+        filter: grayscale(0%);
         width: 150;
         height: 300;
     }
